@@ -122,7 +122,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void test_division_with_2_negative_numbers() {
-		  assertEquals(-10, testee.division(-20, -2));
+		  assertEquals(10, testee.division(-20, -2));
 			
 	}
 	
@@ -140,13 +140,13 @@ public class CalculatorTest {
 	
 	@Test
 	public void test_division_with_maxValue_OK() {
-		  assertTrue(testee.division(Integer.MAX_VALUE, 0) == Integer.MAX_VALUE);
+		  assertTrue(testee.division(Integer.MAX_VALUE, 1) == Integer.MAX_VALUE);
 			
 	}
 	
 	@Test
 	public void test_division_with_minValue_OK() {
-		  assertTrue(testee.division(Integer.MIN_VALUE, 0) == Integer.MIN_VALUE);
+		  assertTrue(testee.division(Integer.MIN_VALUE, 1) == Integer.MIN_VALUE);
 			
 	}
 	
